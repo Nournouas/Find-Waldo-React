@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+*{
+  font-family: "Happy Monkey", system-ui;
+  overflow-x: hidden;
+  
+}
+
+#root{
+  background-color: whitesmoke;
+}
+
+.div-home{
+  background:linear-gradient(0deg, rgba(250, 250, 250, 0.726), rgba(254, 254, 254, 0.726)), url("/Waldo-Home-bg.jpg");
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.btn{
+  background-color: crimson;
+  text-decoration: none;
+  color: black;
+  padding: 7px 12px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 300px;
+  text-align: center;
+  border-radius: 60px;
+  transition: ease-in-out 50ms;
+}
+
+.btn:hover{
+  background-color: rgb(120, 11, 32);
+}
+
+h1{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.play-div{
+  padding: 5vh 0vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.waldo-image-div{
+  max-width: min(1600px, 95vw);
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.picker-button{
+  background-color: rgb(253, 253, 253);
+  border-bottom: none;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+.picker-button:hover{
+  background-color: rgb(218, 218, 218);
+}
+
+.close{
+  background-color: rgb(194, 64, 64);
+  color: whitesmoke;
+}
+
+.title{
+  font-weight: bold;
+}
+
+.found-list{
+  margin-bottom: 5vh;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.victory-div{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: max(1vh, 24px);
+}
+
+.leaderboard-page-div{
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  padding: 4vh;
+  align-items: center;
+  justify-content: top;
+  padding-top: 10vh;
+}
+
+.leaderboard{
+  display: flex;
+  flex-direction: column;
+  min-width: min(90vw, 600px);
+  background-color: aliceblue;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.leaderboard-header{
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: red;
+}
+
+.score-container{
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: black 1px solid;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: bold;
+}
+
+form button{
+  font-weight: 500;
+  margin-top: 12px;
+  border-radius: 40px;
+  border: none;
+  background-color: rgb(7, 95, 51);
+  color: whitesmoke;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+form input{
+  padding: 8px 12px;
+}
+
+form button:hover{
+  background-color: rgb(3, 36, 19);
+}
+
+.horizontal-seperator{
+  width: 100%;
+  height: 2px;
+  background-color: brown;
+  margin: 32px 0px;
+}
